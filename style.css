@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: white; /* Define a cor do texto como branco */
+    --bg-color:rgb(23, 24, 26); /* Define a cor de fundo como um tom de cinza escuro usando valores RGB */
+    --surface-color-hover: rgba(240, 240, 240, 0.5); /* Define a cor de fundo quando o mouse passa por cima do elemento como um tom de cinza claro e transparente */
+    --surface-color: rgba(240, 240, 240, 0.5); /* Define a cor de fundo do elemento como um tom de cinza claro e transparente */
+    background-origin: border-box; /* Define a origem do fundo como a borda da caixa do elemento */
+}
+
+.light {
+    --text-color: rgb(15, 15, 15); /* Define a cor do texto como branco */
+    --bg-color: rgb(247, 240, 240); /* Define a cor de fundo como um tom de cinza escuro usando valores RGB */
+    --stroke-color: rgba(240, 240, 240, 0.5);  /* Define a cor de fundo do elemento como um tom de cinza claro e transparente */
+    --surface-color: rgba(240, 240, 240, 0.5); /* Define a cor de fundo do elemento como um tom de cinza claro e transparente */
+}
+
+
+body {
+    background: var(--bg-color);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    font-family: 'inter', sans-serif;
+    color: #0a0909;
+
+}
+
+
+#container {
+    width: 360px;
+    height: 712px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+#profile {
+    text-align: center;
+}
+
+#profile img {
+    display: block;
+    width: 112px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#profile p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    text-align: center;
+    color:var(--text-color);
+}
+
+#switch {
+    position: relative;
+    width: 64px;
+    
+  
+}
+
+#switch button {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background:var(--text-color);
+    border: 0;
+    border-radius: 50%;
+    background-image: url(./assets/moon-stars.sgv);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    z-index: 1;
+    transform: translateY(-50%);
+    color: var(--text-color);
+    transition: right 0.3s;
+
+    }
+
+
+#switch span {
+    
+    display: flex;
+    flex-direction: row;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid rgba(8, 8, 8, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 9999px;
+    background-position: 50%;
+}
+
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    border: 1px solid rgba(10, 10, 10, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    text-decoration: none;
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+    color: black;
+    color:var(--text-color);
+    border-color: var(--text-color);
+    
+    
+}
+
+ul li a:hover {
+    background: rgba(241, 238, 238, 0.5);
+    border: 1.5px solid white;
+}
+
+#social-links {
+    display: flex;
+    gap: 32px;
+    padding: 24px 0;
+    justify-content: center;
+    font-size: 24px;
+    background-color: aliceblue var();
+    border-radius: 3%;
+    
+}
+
+#social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#social-links a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    padding:
